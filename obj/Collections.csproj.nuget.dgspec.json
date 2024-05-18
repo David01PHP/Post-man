@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/riwip5-017/Desktop/post-man/Collections/Collections.csproj": {}
+    "/home/riwip5-033/Desktop/post-man/Collections/Collections.csproj": {}
   },
   "projects": {
-    "/home/riwip5-017/Desktop/post-man/Collections/Collections.csproj": {
+    "/home/riwip5-033/Desktop/post-man/Collections/Collections.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/riwip5-017/Desktop/post-man/Collections/Collections.csproj",
+        "projectUniqueName": "/home/riwip5-033/Desktop/post-man/Collections/Collections.csproj",
         "projectName": "Collections",
-        "projectPath": "/home/riwip5-017/Desktop/post-man/Collections/Collections.csproj",
-        "packagesPath": "/home/riwip5-017/.nuget/packages/",
-        "outputPath": "/home/riwip5-017/Desktop/post-man/Collections/obj/",
+        "projectPath": "/home/riwip5-033/Desktop/post-man/Collections/Collections.csproj",
+        "packagesPath": "/home/riwip5-033/.nuget/packages/",
+        "outputPath": "/home/riwip5-033/Desktop/post-man/Collections/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/riwip5-017/.nuget/NuGet/NuGet.Config"
+          "/home/riwip5-033/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
