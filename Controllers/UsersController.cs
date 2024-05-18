@@ -41,7 +41,7 @@ namespace Collections.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
+        public async Task<ActionResult<User>> PostUser([FromBody]  User user)
         {
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
@@ -63,9 +63,10 @@ namespace Collections.Controllers
 
             return NoContent();
         }
+        
 
-      /*  [HttpPut("{id}")]
-        public ActionResult PutUser(int id, User user)
+        [HttpPut("{id}")]
+        public ActionResult PutUserId(int id,[FromBody] User user)
         {
             if (id != user.Id)
             {
@@ -84,42 +85,8 @@ namespace Collections.Controllers
             _context.SaveChanges();
 
             return NoContent();
-        }*/
-
-
-          [HttpPut("{id}")]
-        public async Task<IActionResult> PutNote(int id, User user)
-        {
-            if (id != user.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(user).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UserExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();//tira un codogo 204
         }
 
-         private bool UserExists(int id)
-        {
-            return _context.Users.Any(e => e.Id == id);
-        }
 
     }
 }
